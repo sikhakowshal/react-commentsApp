@@ -1,0 +1,173 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.content {
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    width: 90%;
+  }
+}
+
+.heading {
+  color: #1e293b;
+  font-size: 28px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-section {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-section {
+    display: flex;
+  }
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+}
+
+.image {
+  order: 0;
+  width: 100%;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .form-control {
+    flex-grow: 1;
+    order: 0;
+  }
+
+  .image {
+    order: 1;
+    width: 40%;
+  }
+}
+
+.instruction {
+  color: #475569;
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.name-input {
+  color: #1e293b;
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  margin-bottom: 15px;
+  border: 1px solid #cbd2d9;
+  padding: 10px;
+  outline: none;
+}
+
+.comment-input {
+  color: #1e293b;
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd2d9;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .name-input {
+    width: 50%;
+    outline: none;
+  }
+
+  .comment-input {
+    width: 50%;
+    outline: none;
+  }
+}
+
+.button {
+  background-color: #0ea5e9;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 8px 8px 8px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.line {
+  width: 90%;
+  border: 2px solid #cbd2d9;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .line {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.comments-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments-indicator {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.comments-count {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #0ea5e9;
+  padding: 1px 7px 2px 7px;
+  border: none;
+  margin-right: 8px;
+}
+
+.comment-count-indicator {
+  color: #475569;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.comments-container {
+  padding-left: 0;
+  list-style-type: none;
+}
